@@ -19,6 +19,7 @@ mongoose.connect(dbConfig.url, {useNewUrlParser: true, useUnifiedTopology: true}
 require('./app/routes/usuario.router')(app);
 require('./app/routes/cliente.router')(app);
 require('./app/routes/proforma.router')(app);
+require('./app/routes/contacto.router')(app);
 
 const server = app.listen(8000, function () {
     let host = server.address().address
